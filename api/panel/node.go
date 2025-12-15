@@ -40,6 +40,8 @@ type NodeInfo struct {
 }
 
 type CommonNode struct {
+	Protocol   string      `json:"protocol,omitempty"`
+	ListenIP   string      `json:"listen_ip,omitempty"`	
 	Host       string      `json:"host"`
 	ServerPort int         `json:"server_port"`
 	ServerName string      `json:"server_name"`
